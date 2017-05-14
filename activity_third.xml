@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mahe.numberplate1.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberplate_input"
+        android:hint="Number Plate"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_input"
+        android:hint="Name"
+        android:layout_below="@+id/numberplate_input"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/modelname_input"
+        android:hint="Model Name"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/name_input"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/complaint_input"
+        android:hint="Complaint"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/modelname_input"
+        android:layout_alignParentStart="true"/>
+
+
+    <Button
+        android:text="DELETE"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_delete"
+        android:onClick="btn_click"
+        android:layout_alignBaseline="@+id/btn_update"
+        android:layout_alignBottom="@+id/btn_update"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="UPDATE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_update"
+        android:onClick="btn_click"
+        android:layout_alignBaseline="@+id/button_add"
+        android:layout_alignBottom="@+id/button_add"
+        android:layout_toEndOf="@+id/button_add" />
+
+    <Button
+        android:text="LIST"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_owner"
+        android:onClick="btn_click"
+        android:layout_alignBaseline="@+id/btn_delete"
+        android:layout_alignBottom="@+id/btn_delete"
+        android:layout_toEndOf="@+id/btn_update" />
+
+    <Button
+        android:text="ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_add"
+        android:onClick="btn_click"
+        android:layout_marginTop="117dp"
+        android:layout_below="@+id/modelname_input"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="\n\n           Owner Details will appear here"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/btn_update"
+        android:layout_toStartOf="@+id/btn_delete"
+        android:layout_marginTop="37dp"
+        android:background="#dedede"
+        android:textColor="#a3a3a3"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+
+        android:text="Logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
